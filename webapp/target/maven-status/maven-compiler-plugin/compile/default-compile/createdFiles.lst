@@ -1,0 +1,7 @@
+com\example\webapp\controller\ErrorController.class
+com\example\webapp\model\DipendentiRepository.class
+com\example\webapp\service\DipendenteService.class
+com\example\webapp\model\DateRepository.class
+com\example\webapp\WebappApplication.class
+com\example\webapp\controller\IndexController.class
+com\example\webapp\model\Dipendente.class

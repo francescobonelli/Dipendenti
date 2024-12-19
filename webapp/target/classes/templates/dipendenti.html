@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabella Dipendenti</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabella Dipendenti</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Cognome</th>
+                <th>Data Nascita</th>
+                <th>Sede Appartenenza</th>
+                <th>Data Assunzione</th>
+                <th>Data Fine Rapporto</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+       <tr th:each="dipendente : ${dipendenti}"> 
+                <td th:text="${dipendente.nome}"></td>
+                <td th:text="${dipendente.data_nascita}"></td>
+                 <td th:text="${dipendente.sede}"></td>
+                  <td th:text="${dipendente.data_assunzione}"></td>
+                   <td th:text="${dipendente.data_fine_rapporto}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
